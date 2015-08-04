@@ -1,4 +1,4 @@
-# nested-arrays
+# Nested Arrays
 ## Opening
  - What are they going to learn?
   - Today we will be going over Nested Arrays, which is exactly like how it sounds. Think of it like the movie **Inception**  - dream within a dream. We will learn how to create an array within an array or a nested arrays. Then look into how we could operate on them. This will be taught as if it was the first time.
