@@ -55,7 +55,7 @@ var meals = [
 for(var i = 0; i < array.length; i++) {...}
 ```
 
-> **Outcome** - do Fist to Five to gauage understanding
+> **Outcome** - check understanding
 
 ```javascript
 for(var i = 0; i < meals.length; i++) {
@@ -76,7 +76,7 @@ someArray.filter(function() {
  return false;
 });
 ```
-**Guage** - Ask class if this all makes sense.
+**Guage** - check understanding.
 
 > **Activity** - Individually, filter for a all meals with sauce
 
@@ -97,7 +97,7 @@ var saucyMeals = meals.filter(function(thatMeal){
         }
     }
     return false;
-})
+});
 ```
 
 ### Objects within Arrays
@@ -139,6 +139,8 @@ var koalaClub = people.map(function(person){
 });
 ```
 
+> **Check understanding**
+
 > **I do** - based on what we know about objects we could also store any type of data in an object as well. 
 As a person I have many hobbies. How do you think we could represent that in an object? Hint hint, remember **inception**.
 
@@ -174,6 +176,8 @@ var musicFans = people.filter(function(person){
     return false;
 });
 ```
+
+> **Check understanding**
 
 ## Closing
 - Today we went over arrays within array AKA Inception
