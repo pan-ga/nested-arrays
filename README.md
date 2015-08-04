@@ -51,9 +51,10 @@ var meals = [
 > **You do** - If arrays could do inception, what about loops? In groups of two or three write code to print all values in this array.
 
 > **Review** - If we recall, this is the structure for a loop
+
 ```javascript
 for(var i = 0; i < array.length; i++) {...}
-``
+```
 
 **Activity**
 ```javascript
