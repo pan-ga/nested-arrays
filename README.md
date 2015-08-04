@@ -14,7 +14,7 @@
 ## Objectives
 by the end of this lesson you will be able to
 - Do inception on Arrays
-- Understand pratical use cases for nested arrays
+- Understand practical use cases for nested arrays
 - Manipulate nested arrays using `map`
 - Manipulate nested arrays using `filter`
 
