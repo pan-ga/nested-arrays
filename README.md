@@ -1,8 +1,8 @@
 # nested-arrays
 ## Opening
  - What are they going to learn?
-  - Today we will be going over Nested Arrays, which is exactly like how it sounds. Think of it like the movie **Inception** - dream within a dream. We will learn how to create nested arrays and traverse nested arrays. This will be taught as if it was the first time.
-- Why is is it important? (Ask students what they think)
+  - Today we will be going over Nested Arrays, which is exactly like how it sounds. Think of it like the movie **Inception** - dream within a dream. We will learn how to create an array within an array or a nested arrays. Then look into how we could operate on them. This will be taught as if it was the first time.
+- Why is is it important? **(Ask students what they think)**
   - Can be used to organize sets of data
   - Can be used to represent hiearchy
 - How it relates to previous work?
@@ -47,7 +47,7 @@ var meals = [
 ];
 ```
 
-### Traversing Nested Arrays
+### Looping through Nested Arrays
 > **You do** - If arrays could do inception, what about loops? In groups of two or three write code to print all values in this array.
 
 > **Review** - If we recall, this is the structure for a loop
@@ -56,15 +56,9 @@ var meals = [
 for(var i = 0; i < array.length; i++) {...}
 ```
 
-**Activity**
-```javascript
-// Array Within Array Manipulation
-var meals = [
-    ['milk', 'cereal'],
-    ['meat', 'sauce', 'bread'],
-    ['pasta', 'sauce', 'meat']
-];
+> **Outcome**
 
+```javascript
 for(var i = 0; i < meals.length; i++) {
   for(var j = 0; j < meals[i].length; j++) {
     console.log(meals[i][j]);
@@ -72,7 +66,20 @@ for(var i = 0; i < meals.length; i++) {
 }
 ```
 
+### Filtering through Nested Arrays
 
+> **Review** - Filter returns a new array with all elements that passes a test implemented by your provided function
+```javascript
+someArray.filter(function() {
+ if(something) {
+  return true;
+ }
+ return false;
+});
+```
+
+> **Activity** - Individually, filter for a all meals with sauce
+**Outcome**
 ```javascript
 // Obtain all meals with sauce
 var saucyMeals = meals.filter(function(thatMeal){
@@ -83,9 +90,10 @@ var saucyMeals = meals.filter(function(thatMeal){
     }
     return false;
 })
+```
 
-// --------------
 
+```javascript
 // Object Within Array Manipulation
 var people =[
     {name: 'lichard', age: 3},
@@ -116,8 +124,6 @@ lichard.dance = function(){
     console.log('Booooogie!!!');
 }
 
-
-// --------------
 
 // Array Within Object Within Array Manipulation
 var people =[
