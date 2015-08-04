@@ -1,16 +1,22 @@
 # nested-arrays
 ## Opening
 - What are they going to learn?
-  - Today we will be going over Nested Arrays, which is exactly like how it sounds. This will be taught as if it was the first. time.
-- Why is is it important?
+  - Today we will be going over Nested Arrays, which is exactly like how it sounds. Think of it like the movie **Inception** - dream within a dream. We will learn how to create nested arrays and traverse nested arrays. This will be taught as if it was the first time.
+- Why is is it important? (Ask students what they think)
+  - Can be used to organize sets of data
+  - Can be used to represent hiearchy
 - How it relates to previous work?
+  - We learned about arrays in the past 
+    - what can arrays store (numbers, strings, objects,...arrays)?
 - How will learning occur?
+  - To learn this material we'll use what we know about arrays (creating, traversal) then do an **Inception** on it.
 
 ## Objectives
 by the end of this lesson you will be able to
-- Explain a nominal example for using different data structures
-- Manipulate data structures using `map`
-- Select data from structures using `filter`
+- Do inception on Arrays
+- Understand pratical use cases for nested arrays
+- Manipulate nested arrays using `map`
+- Manipulate nested arrays using `filter`
 
 
 ```javascript
