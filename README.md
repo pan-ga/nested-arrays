@@ -1,15 +1,15 @@
 # nested-arrays
 ## Opening
  - What are they going to learn?
-  - Today we will be going over Nested Arrays, which is exactly like how it sounds. Think of it like the movie **Inception** - dream within a dream. We will learn how to create an array within an array or a nested arrays. Then look into how we could operate on them. This will be taught as if it was the first time.
-- Why is is it important? **(Ask students what they think)**
+  - Today we will be going over Nested Arrays, which is exactly like how it sounds. Think of it like the movie **Inception**  - dream within a dream. We will learn how to create an array within an array or a nested arrays. Then look into how we could operate on them. This will be taught as if it was the first time.
+ - Why is is it important? **(Ask students what they think)**
   - Can be used to organize sets of data
   - Can be used to represent hiearchy
-- How it relates to previous work?
+ - How it relates to previous work?
   - We learned about arrays in the past 
     - what can arrays store (numbers, strings, objects,...arrays)?
-- How will learning occur?
-  - To learn this material we'll use what we know about arrays (creating, traversal, accessing) then do an **Inception** on it.
+  - How will learning occur?
+   - To learn this material we'll use what we know about arrays (creating, traversal, accessing) then do an **Inception** on it.
   
 ## Objectives
 by the end of this lesson you will be able to
