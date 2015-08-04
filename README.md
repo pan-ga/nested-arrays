@@ -19,9 +19,9 @@ by the end of this lesson you will be able to
 - Manipulate nested arrays using `filter`
 
 
-> ### Editor: http://repl.it/BAJE
+> **Editor:** http://repl.it/BAJE
 
-### Review
+**Review**
 ```javascript
 // Array Manipulation
 var names = ['Lichard', 'Kathew', 'Omily'];
@@ -34,9 +34,8 @@ var theGreatNames = names.map(function(name){
 
 > **We Do** what should the result be?
 
-
 ### Introduce Nested Arrays
-> **I DO** - We mentioned earlier that arrays can do inception and hold any type of data.
+> **I do** - We mentioned earlier that arrays can do inception and hold any type of data.
 
 ```javascript
 // Array Within Array Manipulation
@@ -48,7 +47,7 @@ var meals = [
 ```
 
 ### Looping through Nested Arrays
-> **You do** - If arrays could do inception, what about loops? In groups of two or three write code to print all values in this array.
+> **You do** - If arrays could do inception, what about loops? Individually write code to print all values in this array.
 
 > **Review** - If we recall, this is the structure for a loop
 
@@ -56,7 +55,7 @@ var meals = [
 for(var i = 0; i < array.length; i++) {...}
 ```
 
-> **Outcome**
+> **Outcome** - do Fist to Five to gauage understanding
 
 ```javascript
 for(var i = 0; i < meals.length; i++) {
@@ -77,10 +76,19 @@ someArray.filter(function() {
  return false;
 });
 ```
+**Guage** - Ask class if this all makes sense.
 
 > **Activity** - Individually, filter for a all meals with sauce
+
 **Outcome**
 ```javascript
+// Array Within Array Manipulation
+var meals = [
+    ['milk', 'cereal'],
+    ['meat', 'sauce', 'bread'],
+    ['pasta', 'sauce', 'meat']
+];
+
 // Obtain all meals with sauce
 var saucyMeals = meals.filter(function(thatMeal){
     for(var i=0; i<thatMeal.length; i++){
@@ -92,54 +100,84 @@ var saucyMeals = meals.filter(function(thatMeal){
 })
 ```
 
+### Objects within Arrays
 
+> **I do** - Often we work with many types of objects. If we wanted to group them, how would we do that? (Ask class)
+**Review** - JavaScript Objects are key value pairs `{name: 'lichard', age: 3}`.
+
+**Show code**
 ```javascript
 // Object Within Array Manipulation
-var people =[
+var people = [
+    {name: 'lichard', age: 3},
+    {name: 'kathew', age: 33},
+    {name: 'omily', age: 13}
+];
+```
+
+> **You Do** - update each person object to have a club attribute set to Koalas using map
+**Review** - 
+```javascript
+myArray.map(function(element, index) {
+ // do something...
+});
+```
+
+**Outcome**
+```javascript
+// Object Within Array Manipulation
+var people = [
     {name: 'lichard', age: 3},
     {name: 'kathew', age: 33},
     {name: 'omily', age: 13}
 ];
 
-// Each is in the koala club!  Place that in their attributes
+// Each is in the koala club! Place that in their attributes
 var koalaClub = people.map(function(person){
     person.club = 'Koalas';
     return person;
-})
+});
+```
 
-// --------------
+> **I do** - based on what we know about objects we could also store any type of data in an object as well. 
+As a person I have many hobbies. How do you think we could represent that in an object? Hint hint, remember **inception**.
 
-
-// Object Manipulation
-var lichard = {
-    name: 'Lichard',
-    age: 23,
-    run: function(){
-        console.log('Like the wind...');
-    }
-};
-
-// Make lichard dance!!!
-lichard.dance = function(){
-    console.log('Booooogie!!!');
-}
-
-
+**Outcome**
+```javascript
 // Array Within Object Within Array Manipulation
 var people =[
-    {name: 'lichard', age: 3, favs: ['movies', 'music']},
-    {name: 'kathew', age: 33, favs: ['bananas', 'dat bass']},
-    {name: 'omily', age: 13, favs: ['candy', 'music']}
+    {name: 'lichard', age: 3, hobbies: ['bug picking', 'eating', 'music']},
+    {name: 'kathew', age: 33, hobbies: ['fencing', 'dat bass']},
+    {name: 'omily', age: 13, hobbies: ['skateboarding', 'music']}
+];
+```
+
+> **Acivitity** - In groups of two or three filter through an array of people for people who like music
+
+**Outcome**
+```javascript
+// Array Within Object Within Array Manipulation
+var people =[
+    {name: 'lichard', age: 3, hobbies: ['bug picking', 'eating', 'music']},
+    {name: 'kathew', age: 33, hobbies: ['fencing', 'dat bass']},
+    {name: 'omily', age: 13, hobbies: ['skateboarding', 'music']}
 ];
 
 // Find all the music fans
 var musicFans = people.filter(function(person){
-    var favs = person.favs;
-    for(var i=0; i<favs.length; i++){
-        if (favs[i]==='music'){
+    var hobbies = person.hobbies;
+    for(var i=0; i<hobbies.length; i++){
+        if (hobbies[i]==='music'){
             return true;
         }
     }
     return false;
 });
 ```
+
+## Closing
+- Today we went over arrays within array AKA Inception
+- Then we incepted loops - loops within loops
+- Then inception within inception - objects with arrays within arrays
+- Then used filter and mapped on this objects with arrays within arrays 
+- And this could go on and on - arrays within array within arrays, so enjoy!
