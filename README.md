@@ -62,7 +62,7 @@ var meals = [
 for(var i = 0; i < array.length; i++) {...}
 ```
 
-> **Activity (15 minutes)** - check understanding
+> **Code along** - check understanding
 
 ```javascript
 var meals = [
@@ -137,7 +137,7 @@ myArray.map(function(element, index) {
 });
 ```
 
-> **You do (15 minutes)** - update each person object to have a club attribute set to Koalas using map
+> **You do (10 minutes)** - update each person object to have a club attribute set to Koalas using map
 
 **Outcome**
 ```javascript
