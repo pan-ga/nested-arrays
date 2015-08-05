@@ -6,11 +6,11 @@
   - Can be used to organize sets of data
   - Can be used to represent hiearchy
  - How it relates to previous work?
-  - We learned about arrays in the past 
+  - We learned about arrays in the past
     - what can arrays store (numbers, strings, objects,...arrays)?
   - How will learning occur?
    - To learn this material we'll use what we know about arrays (creating, traversal, accessing) then do an **Inception** on it.
-  
+
 ## Objectives
 by the end of this lesson you will be able to
 - Do inception on Arrays
@@ -21,7 +21,12 @@ by the end of this lesson you will be able to
 
 > **Editor:** http://repl.it/BAJE
 
-**Review**
+**Warm up**
+- Let's start off with regular array to review
+- We'll take a array of names and append 'the great' to it
+
+> **Code along (5 minutes)**
+
 ```javascript
 // Array Manipulation
 var names = ['Lichard', 'Kathew', 'Omily'];
@@ -29,13 +34,13 @@ var names = ['Lichard', 'Kathew', 'Omily'];
 // Make them all name... the great
 var theGreatNames = names.map(function(name){
     return name + '... the great';
-})
+});
 ```
 
-> **We Do** what should the result be?
+> **We do** - what should the result be?
 
 ### Introduce Nested Arrays
-> **I do** - We mentioned earlier that arrays can do inception and hold any type of data.
+> **I do (5 minutes)** - We mentioned earlier that arrays can do inception and hold any type of data.
 
 ```javascript
 // Array Within Array Manipulation
@@ -45,6 +50,8 @@ var meals = [
     ['pasta', 'sauce', 'meat']
 ];
 ```
+> **Check Understanding** - how is this?
+
 
 ### Looping through Nested Arrays
 > **You do** - If arrays could do inception, what about loops? Individually write code to print all values in this array.
@@ -55,9 +62,15 @@ var meals = [
 for(var i = 0; i < array.length; i++) {...}
 ```
 
-> **Outcome** - check understanding
+> **Activity (15 minutes)** - check understanding
 
 ```javascript
+var meals = [
+    ['milk', 'cereal'],
+    ['meat', 'sauce', 'bread'],
+    ['pasta', 'sauce', 'meat']
+];
+
 for(var i = 0; i < meals.length; i++) {
   for(var j = 0; j < meals[i].length; j++) {
     console.log(meals[i][j]);
@@ -76,9 +89,9 @@ someArray.filter(function() {
  return false;
 });
 ```
-**Guage** - check understanding.
+**Check Understanding** - check understanding.
 
-> **Activity** - Individually, filter for a all meals with sauce
+**You do (15 minutes)** - Individually, filter for a all meals with sauce
 
 **Outcome**
 ```javascript
@@ -102,8 +115,10 @@ var saucyMeals = meals.filter(function(thatMeal){
 
 ### Objects within Arrays
 
-> **I do** - Often we work with many types of objects. If we wanted to group them, how would we do that? (Ask class)
-**Review** - JavaScript Objects are key value pairs `{name: 'lichard', age: 3}`.
+> **Code along** - Often we work with many types of objects. If we wanted to group them, how would we do that? (Ask class)
+**Review** - JavaScript Objects are key value pairs
+
+> `{name: 'lichard', age: 3}`.
 
 **Show code**
 ```javascript
@@ -115,13 +130,14 @@ var people = [
 ];
 ```
 
-> **You Do** - update each person object to have a club attribute set to Koalas using map
-**Review** - 
+> **Review**
 ```javascript
 myArray.map(function(element, index) {
  // do something...
 });
 ```
+
+> **You do (15 minutes)** - update each person object to have a club attribute set to Koalas using map
 
 **Outcome**
 ```javascript
@@ -141,7 +157,9 @@ var koalaClub = people.map(function(person){
 
 > **Check understanding**
 
-> **I do** - based on what we know about objects we could also store any type of data in an object as well. 
+<br>
+
+> **I do** - based on what we know about objects we could also store any type of data in an object as well.
 As a person I have many hobbies. How do you think we could represent that in an object? Hint hint, remember **inception**.
 
 **Outcome**
@@ -154,7 +172,7 @@ var people =[
 ];
 ```
 
-> **Acivitity** - In groups of two or three filter through an array of people for people who like music
+> **Acivitity (20 minutes)** - In groups of two or three filter through an array of people for people who like music
 
 **Outcome**
 ```javascript
@@ -183,5 +201,5 @@ var musicFans = people.filter(function(person){
 - Today we went over arrays within array AKA Inception
 - Then we incepted loops - loops within loops
 - Then inception within inception - objects with arrays within arrays
-- Then used filter and mapped on this objects with arrays within arrays 
+- Then used filter and mapped on this objects with arrays within arrays
 - And this could go on and on - arrays within array within arrays, so enjoy!
